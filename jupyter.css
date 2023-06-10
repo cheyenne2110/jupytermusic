@@ -130,7 +130,7 @@ body {
   justify-content: space-between;
 line-height: 200%;
   position: fixed;
-  padding-top: 50px;
+  padding-top: 20px;
  }
 
 .overlay {
@@ -390,6 +390,9 @@ line-height: 200%;
 	}
 	.konzerte p:hover {
 	font-size: 12px;
+}
+	.navbar {
+	font-size:5px;
 }
 
 .social {
