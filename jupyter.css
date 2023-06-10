@@ -1,0 +1,431 @@
+html {
+	font-family: Josefin Sans, sans-serif;
+	font: 100%/5, 'Josefin Sans', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+/*
+.schrift {
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  z-index: -1;
+  stroke-dasharray: 20000;
+  stroke-dashoffset: -15000;
+  animation-name: move;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-delay: -15s;
+  top: -2rem;
+  left: -2rem;
+  width: 100%;
+  transform: scale(1.05, 1.05);
+}*/
+
+/*path {
+  stroke: #000;
+  stroke-width: 0.3rem;
+  fill: none;
+}
+*/
+
+/*.header {
+  background-image: url(header.JPG);
+  background-size: cover;
+  /*background-position: center;*/
+  /*height: 750px;  Höhe des Header-Bereichs anpassen 
+  color: #ffffff;*/ /* Farbe des Textes anpassen, um ihn lesbar zu machen */
+  /*padding-top: 100px;  Vertikaler Abstand zum oberen Rand anpassen */
+
+/*}*/
+/*.überschriften {
+	opacity: 0;
+	transition: all 1s;
+} 
+
+.show {
+	opacity: 1;
+}*/
+
+.navbar {
+	size: 100%;
+	margin: 0;
+	background-color: white;
+	/*list-style: none;*/
+	list-style: none;
+	display: grid;
+	grid-template-columns: 10fr repeat(5, 2fr)  28fr repeat(4, 1fr) 3fr;
+	grid-gap: 2em;
+	/*padding: 5px;*/
+	position: fixed;
+	z-index: 5;
+}
+
+.social {
+	display: grid;
+	grid-template-columns: /*10fr repeat(5, 2fr)  28fr */repeat(4, 1fr) 3fr;
+	grid-gap: 3em;
+}
+
+.navbar .bild img {
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+
+.navbar img {
+	position: fixed;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: #ff963b;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	transition: all 0.25s ease;
+}
+
+.navbar p {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.navbar p:hover {
+	border-bottom: 1px solid #ff963b;
+}
+
+.navbar img{
+	transition: transform 0.3s ease;
+}
+
+.navbar a:hover img {
+            transform: scale(1.2);
+        }
+
+.navbar .youtube img{
+	padding-right: 10px;
+	padding-top: 27px;
+}
+
+/*.bild {
+	position: relative;
+}*/
+
+.socialleiste {
+	position: absolute;
+	top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  justify-content: space-between;
+line-height: 200%;
+  position: fixed;
+  padding-top: 50px;
+ }
+
+.overlay {
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  animation-name: fillSVG;
+  
+  stroke-dashoffset: -500;
+  stroke-dasharray: 700;
+ 
+  animation: 3s fillSvg ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* Weitere Stile für das Overlay definieren */
+}
+
+.hintergrund {
+  fill: transparent;
+}
+
+.cls-2 {
+  fill: #ff963b;
+}
+
+#text {
+  height: 40vw;
+  width: 100vw;
+  
+}
+
+@keyframes fillSvg {
+  0%{
+    stroke-dashoffset: -500;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+/*.navbar a:hover {
+	
+}
+*/
+/*.bild {
+	padding-top: 100px;
+}*/
+.überschriften h1 {
+	text-align: center;
+	padding-top: 100px;
+	font-size: 30px;
+}
+
+.musik {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	padding: 100px;
+	padding-top: 50px;
+	/*position: relative;*/
+}
+
+.titel {
+	padding-left: 0;
+}
+
+.titel img {
+	padding-left: -20px;
+}
+
+.vespa {
+	list-style: none;
+
+}
+
+.vespa a {
+	text-decoration: none;
+	color: black;
+	line-height: 200%;
+}
+
+.vespa a:hover {
+	border-bottom: 1px solid #ff963b;
+}
+
+.vespa img {
+	padding-right: 20px;
+	padding-left: 5px;
+}
+
+.video {
+	text-align: center;
+	border-bottom: 3px solid #ff963b;
+	padding-bottom: 100px;
+}
+
+.logohintergrund {
+	background-image: url(logo.jpeg);
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 500px;
+}
+
+.konzerte {
+	/*background-color: white;*/
+	
+	
+	list-style: none;
+	text-align: center;
+	padding-top: 50px;
+	line-height: 200%;
+	border-bottom: 3px solid #ff963b;
+	padding-bottom: 100px;
+}
+
+.konzerte p {
+	transition: font-size 0.3s ease;
+
+}
+
+.konzerte p:hover {
+	font-size: 1.2em;
+}
+
+.konzerte a {
+	color: black;
+	text-decoration: none;
+}
+
+.konzerte a:hover {
+	border-bottom: 1px solid #ff963b;
+}
+
+.bio {
+	list-style: none;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 3em;
+	padding-top: 50px;
+	padding: 100px;
+	line-height: 150%;
+}
+
+.bio p {
+	padding-top: -20px;
+}
+
+.kontakt {
+	background-color: #ff963b;
+	text-align: center;
+	padding-bottom: 200px;
+}
+
+.kontakt a{
+	color: black;
+	text-decoration: none;
+}
+
+.kontakt a:hover {
+	color: white;
+}
+
+.kontakt img {
+	padding-bottom: 10px;
+	transition: transform 0.3s ease;
+}
+
+.kontakt a:hover img {
+            transform: scale(1.2);
+        }
+
+.kontakt {
+	display: grid;
+	font-size: 10px;
+}
+
+.kontakte h2 {
+	font-size: 12px;
+}
+
+
+ 
+/*
+@keyframes scrolling {
+	from { transform: translate3d(-50%, 0, 0); }
+	to { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes move {
+  0% { stroke-dashoffset: -15000; }
+  50% { stroke-dashoffset: -5000;  }
+  100% { stroke-dashoffset: 0;  }
+  to {
+    stroke-dashoffset: 0;
+  }*/
+
+  .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            height: 500px;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .slideshow-container img {
+            width: 70%;
+            height: auto;
+            object-fit: cover;
+          
+        }
+
+        .slideshow-container .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 2s ease;
+        }
+
+        .slideshow-container .active {
+            opacity: 1;
+        }
+
+.impressum {
+	padding: 100px;
+}
+
+.impressum img {
+	padding-bottom: 50px
+  transition: transform 0.3s ease;
+}
+
+.impressum a:hover img {
+            transform: scale(1.2);
+        }
+@media (min-width: 850px) {
+	.socialleiste {
+		display: none;
+	}
+}
+
+@media (max-width: 850px) {
+	.überschriften h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 15px;
+	}
+
+	p {
+		font-size: 10px;
+	}
+	.konzerte p:hover {
+	font-size: 12px;
+}
+
+.social {
+	display: none;
+}
+	
+	.video iframe{
+		width: 80%;
+	}
+	.bio {
+		display: inline-block;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+
+	.slideshow-container {
+		width:100%;
+		padding-bottom: 0;
+		align-items: center;
+	}
+.social li{
+display: none;
+}
+
+	.bio li p {
+		padding-top: 0;
+	}
+
+	.overlay {
+		display: none;
+	}
+	/*.logohintergrund {
+		width: 60%;
+	}*/
+	.musik {
+		display: block;
+	}
+}
+
